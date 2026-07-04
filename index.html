@@ -5,10 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#8f5130" />
     <title>清明上河圖：汴河一日</title>
+    <link id="pages-style" rel="stylesheet" href="./assets/game.css" disabled />
   </head>
   <body>
     <div id="app"></div>
     <noscript>這個遊戲需要 JavaScript 才能執行。</noscript>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module">
+      const isGitHubPages = location.hostname.endsWith(".github.io");
+      if (isGitHubPages) {
+        document.querySelector("#pages-style")?.removeAttribute("disabled");
+        const pagesEntrypoint = new URL("./assets/game.js", window.location.href).href;
+        import(/* @vite-ignore */ pagesEntrypoint).catch((error) => {
+          console.error(error);
+          document.querySelector("#app").innerHTML =
+            '<main class="fatal-error"><h1>遊戲部署中</h1><p>請稍候一至兩分鐘後重新整理。</p></main>';
+        });
+      } else {
+        import("/src/main.ts");
+      }
+    </script>
   </body>
 </html>
