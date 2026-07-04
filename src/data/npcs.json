@@ -1,0 +1,96 @@
+[
+  {
+    "id": "tea_owner",
+    "name": "陳掌櫃",
+    "role": "茶樓掌櫃",
+    "englishRole": "Tea-house owner",
+    "position": [7.4, 0, 7.6],
+    "color": "#8b4b32",
+    "behavior": "idle"
+  },
+  {
+    "id": "food_merchant",
+    "name": "林小販",
+    "role": "熱食小販",
+    "englishRole": "Food-stall merchant",
+    "position": [-5.5, 0, -0.6],
+    "color": "#b85b34",
+    "behavior": "idle"
+  },
+  {
+    "id": "fisherman",
+    "name": "周漁夫",
+    "role": "漁夫",
+    "englishRole": "Fisherman",
+    "position": [18.3, 0, -16.2],
+    "color": "#3d6a78",
+    "behavior": "walk",
+    "path": [[18.3, -16.2], [23.0, -16.8], [20.5, -12.8]]
+  },
+  {
+    "id": "doctor",
+    "name": "何郎中",
+    "role": "傳統醫者",
+    "englishRole": "Traditional doctor",
+    "position": [-15.2, 0, 5.2],
+    "color": "#4c6d4a",
+    "behavior": "idle"
+  },
+  {
+    "id": "city_guard",
+    "name": "王校尉",
+    "role": "城門守衛",
+    "englishRole": "City guard",
+    "position": [-31.8, 0, 0.8],
+    "color": "#59606a",
+    "behavior": "walk",
+    "path": [[-32, 0.8], [-27, 2.6], [-30, -2.8]]
+  },
+  {
+    "id": "delivery_worker",
+    "name": "阿順",
+    "role": "搬運工",
+    "englishRole": "Delivery worker",
+    "position": [1.8, 0, -5.6],
+    "color": "#8e6a35",
+    "behavior": "walk",
+    "path": [[1.8, -5.6], [6.4, -4.8], [10.0, -7.5], [3.5, -7.0]]
+  },
+  {
+    "id": "lost_child",
+    "name": "小蓮",
+    "role": "迷路孩子",
+    "englishRole": "Lost child",
+    "position": [-2.8, 0, 2.4],
+    "color": "#d47183",
+    "behavior": "idle"
+  },
+  {
+    "id": "boat_operator",
+    "name": "趙船夫",
+    "role": "船家",
+    "englishRole": "Boat operator",
+    "position": [27.6, 0, -14.4],
+    "color": "#2f6174",
+    "behavior": "idle"
+  },
+  {
+    "id": "elder_resident",
+    "name": "杜婆婆",
+    "role": "巷尾居民",
+    "englishRole": "Elderly resident",
+    "position": [-6.2, 0, 18.6],
+    "color": "#6e5d83",
+    "behavior": "idle"
+  },
+  {
+    "id": "child_mother",
+    "name": "沈娘子",
+    "role": "居民",
+    "englishRole": "Resident",
+    "position": [-9.6, 0, 15.4],
+    "color": "#7b5543",
+    "behavior": "walk",
+    "path": [[-9.6, 15.4], [-6.2, 16.2], [-8.8, 18.8]]
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "market_ledger_page",
+    "name": "破損帳頁",
+    "icon": "paper",
+    "category": "quest",
+    "description": "從市集攤位旁拾起的半頁帳目，上面記著茶葉與米價。"
+  },
+  {
+    "id": "ledger_seal_clue",
+    "name": "朱印線索",
+    "icon": "seal",
+    "category": "quest",
+    "description": "印泥痕跡像是藥鋪常用的收貨章，可能指向搬運路線。"
+  },
+  {
+    "id": "missing_ledger",
+    "name": "失蹤的商業帳簿",
+    "icon": "book",
+    "category": "quest",
+    "description": "茶樓商隊的帳簿，記錄酒樓、藥鋪、船家與米行的往來。"
+  },
+  {
+    "id": "lost_basket",
+    "name": "漁夫的竹籃",
+    "icon": "basket",
+    "category": "quest",
+    "description": "被河水沖到橋腳的竹籃，裡面還有濕漉漉的魚網。"
+  },
+  {
+    "id": "medicine_packet",
+    "name": "安神藥包",
+    "icon": "medicine",
+    "category": "quest",
+    "description": "何郎中配好的藥包，要送到巷內杜婆婆家。"
+  },
+  {
+    "id": "child_ribbon",
+    "name": "紅色髮帶",
+    "icon": "ribbon",
+    "category": "quest",
+    "description": "迷路孩子的小髮帶，用來向家人確認身份。"
+  },
+  {
+    "id": "copper_cash",
+    "name": "十文銅錢",
+    "icon": "coin",
+    "category": "collectible",
+    "description": "完成差事獲得的小賞錢。"
+  },
+  {
+    "id": "bridge_token",
+    "name": "虹橋通行木牌",
+    "icon": "token",
+    "category": "collectible",
+    "description": "完成主線後獲得的木牌，可閱讀新的汴河貿易資訊。"
+  }
+]

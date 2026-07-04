@@ -61,7 +61,3 @@ Production build 輸出在：
 ```text
 dist/
 ```
-
-## GitHub 上傳說明
-
-如果此 repo 只看到 `qingming-riverside-3dgame-source.zip`，請下載並解壓，然後在解壓後的資料夾執行上面的 npm 指令。這個 ZIP 是完整 source project，不包含 `node_modules`、`dist` 或測試截圖輸出。

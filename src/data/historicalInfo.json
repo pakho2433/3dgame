@@ -1,0 +1,68 @@
+[
+  {
+    "id": "info_education_note",
+    "title": "教育性詮釋",
+    "topic": "導覽",
+    "body": "本遊戲以《清明上河圖》與宋代城市生活為靈感，是教育性詮釋，不是完全精確的歷史重建。"
+  },
+  {
+    "id": "info_market_life",
+    "title": "市集生活 Market Life",
+    "topic": "市場",
+    "body": "河岸市集聚集小販、茶客、搬運工與旅人，商品交易常與船運、倉儲和飲食攤位連在一起。"
+  },
+  {
+    "id": "info_transport",
+    "title": "水陸交通 Transportation",
+    "topic": "交通",
+    "body": "城中道路與河道同樣重要，行人、馬車、手推車和船隻共同支撐城市流動。"
+  },
+  {
+    "id": "info_architecture",
+    "title": "木構建築 Architecture",
+    "topic": "建築",
+    "body": "沿街店鋪多用木柱、瓦頂、招牌與臨街開口，方便買賣，也讓街道充滿聲音與色彩。"
+  },
+  {
+    "id": "info_food",
+    "title": "城市飲食 Food",
+    "topic": "飲食",
+    "body": "茶湯、炊餅、魚羹和熱食攤是旅人與商販補充體力的地方，也提供消息交換。"
+  },
+  {
+    "id": "info_clothing",
+    "title": "衣著 Clothing",
+    "topic": "服飾",
+    "body": "不同職業會穿著方便工作的衣物，例如搬運工短打、商人長衫、守衛配甲片與腰牌。"
+  },
+  {
+    "id": "info_river_trade",
+    "title": "汴河貿易 River Trade",
+    "topic": "貿易",
+    "body": "河運讓米、茶、布匹、藥材和木材進入城市，帳簿與印章是確認貨物流向的重要工具。"
+  },
+  {
+    "id": "info_medicine",
+    "title": "傳統醫藥 Medicine",
+    "topic": "醫藥",
+    "body": "藥鋪會記錄藥材來源、配方和欠款，醫者也常依病人的生活環境調整用藥。"
+  },
+  {
+    "id": "info_occupations",
+    "title": "城市職業 Occupations",
+    "topic": "職業",
+    "body": "船夫、守衛、小販、醫者、茶博士、搬運工、漁夫與工匠共同維持一座城市的日常。"
+  },
+  {
+    "id": "info_currency",
+    "title": "銅錢 Currency",
+    "topic": "貨幣",
+    "body": "銅錢可用於小額買賣，大宗交易則更依賴帳簿、信用與熟人網絡。"
+  },
+  {
+    "id": "info_entertainment",
+    "title": "娛樂 Entertainment",
+    "topic": "娛樂",
+    "body": "茶樓、說書、雜耍和河邊看熱鬧都是城市娛樂的一部分，許多消息也在這些場所流動。"
+  }
+]

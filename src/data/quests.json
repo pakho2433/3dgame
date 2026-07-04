@@ -1,0 +1,124 @@
+[
+  {
+    "id": "main_missing_ledger",
+    "title": "失蹤的商業帳簿",
+    "type": "main",
+    "giverNpcId": "tea_owner",
+    "description": "茶樓掌櫃遺失了商業帳簿。追查市集、詢問證人、找回帳簿並交還。",
+    "objectives": [
+      {
+        "id": "speak_tea_owner",
+        "text": "與茶樓掌櫃陳掌櫃談話",
+        "required": ["tea_owner"]
+      },
+      {
+        "id": "investigate_market",
+        "text": "調查市集攤位旁的破損帳頁",
+        "required": ["market_ledger_page"]
+      },
+      {
+        "id": "question_witnesses",
+        "text": "詢問市集中知道線索的人",
+        "required": ["food_merchant", "city_guard", "delivery_worker"]
+      },
+      {
+        "id": "collect_seal_clue",
+        "text": "在藥鋪附近確認朱印線索",
+        "required": ["ledger_seal_clue"]
+      },
+      {
+        "id": "find_ledger",
+        "text": "在茶樓二樓與後巷之間找到帳簿",
+        "required": ["missing_ledger"]
+      },
+      {
+        "id": "return_ledger",
+        "text": "把帳簿交還給陳掌櫃",
+        "required": ["tea_owner_return"]
+      }
+    ],
+    "rewards": {
+      "items": ["copper_cash", "bridge_token"],
+      "history": ["info_river_trade"]
+    }
+  },
+  {
+    "id": "side_lost_basket",
+    "title": "尋回漁夫竹籃",
+    "type": "side",
+    "giverNpcId": "fisherman",
+    "description": "幫周漁夫從橋腳附近取回被河水沖走的竹籃。",
+    "objectives": [
+      {
+        "id": "accept_basket",
+        "text": "答應幫周漁夫找竹籃",
+        "required": ["fisherman"]
+      },
+      {
+        "id": "collect_basket",
+        "text": "在橋腳或碼頭附近找到竹籃",
+        "required": ["lost_basket"]
+      },
+      {
+        "id": "return_basket",
+        "text": "把竹籃交還給周漁夫",
+        "required": ["fisherman_return"]
+      }
+    ],
+    "rewards": {
+      "items": ["copper_cash"],
+      "history": ["info_transport"]
+    }
+  },
+  {
+    "id": "side_medicine_delivery",
+    "title": "送藥到巷尾",
+    "type": "side",
+    "giverNpcId": "doctor",
+    "description": "何郎中需要有人把安神藥包送給住在巷尾的杜婆婆。",
+    "objectives": [
+      {
+        "id": "accept_medicine",
+        "text": "向何郎中接下送藥差事",
+        "required": ["doctor"]
+      },
+      {
+        "id": "deliver_medicine",
+        "text": "把安神藥包交給杜婆婆",
+        "required": ["elder_resident"]
+      }
+    ],
+    "rewards": {
+      "items": ["copper_cash"],
+      "history": ["info_medicine"]
+    }
+  },
+  {
+    "id": "side_lost_child",
+    "title": "帶迷路孩子找家人",
+    "type": "side",
+    "giverNpcId": "lost_child",
+    "description": "小蓮在熱鬧市集迷路了，幫她找到在居民巷口等待的家人。",
+    "objectives": [
+      {
+        "id": "accept_child",
+        "text": "安撫小蓮並收下紅色髮帶",
+        "required": ["lost_child"]
+      },
+      {
+        "id": "find_family",
+        "text": "到居民巷口找到小蓮的家人",
+        "required": ["child_mother"]
+      },
+      {
+        "id": "confirm_child",
+        "text": "回到小蓮身邊告訴她家人在等候",
+        "required": ["lost_child_return"]
+      }
+    ],
+    "rewards": {
+      "items": ["copper_cash"],
+      "history": ["info_market_life"]
+    }
+  }
+]
