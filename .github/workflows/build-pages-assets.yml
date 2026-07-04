@@ -1,0 +1,61 @@
+name: Build GitHub Pages assets
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages-assets
+  cancel-in-progress: true
+
+jobs:
+  build-pages-assets:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Copy production assets
+        shell: bash
+        run: |
+          rm -rf assets
+          mkdir -p assets
+          cp dist/assets/* assets/
+          main_js="$(find dist/assets -maxdepth 1 -name 'main-*.js' | sort | head -n 1)"
+          main_css="$(find dist/assets -maxdepth 1 -name 'main-*.css' | sort | head -n 1)"
+          test -n "$main_js"
+          test -n "$main_css"
+          cp "$main_js" assets/game.js
+          cp "$main_css" assets/game.css
+          touch .nojekyll
+
+      - name: Commit built assets
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets .nojekyll
+          if git diff --cached --quiet; then
+            echo "No built asset changes."
+          else
+            git commit -m "Build GitHub Pages assets"
+            git push
+          fi
